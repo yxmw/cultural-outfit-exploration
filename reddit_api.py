@@ -8,16 +8,14 @@ import praw
 reddit = praw.Reddit(
     client_id="CLIENT_ID",
     client_secret="CLIENT_SECRET",
-    user_agent="cold-start-sns/0.1 by yxmw"
+    user_agent="cold-start-sns/0.1 by USERNAME"
 )
 print("read_only:", reddit.read_only)
 
 '''
 for post in reddit.subreddit("weddingdress").hot(limit=5):
     print(post.id, post.title, post.url)
-'''
 
-'''
 SUBREDDITS = ["weddingplanning","wedding","weddingdress","hanfu","IndianFashion","AsianBeauty"]
 KEYWORDS = ["wedding dress", "wedding", "saree","hanfu","kimono","ankara","qipao"]
 '''
